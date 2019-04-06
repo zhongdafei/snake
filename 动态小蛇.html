@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <script src="food.js"></script>
+        <script src="snake.js"></script>
+        <script src="game.js"></script>
+    </head>
+    <style>
+        .map {
+            width: 600px;
+            height: 600px;
+            background-color: #ccc;
+            position: relative;
+        }
+    </style>
+    <body>
+        <div class="map"></div>
+        <script>
+           //初始化游戏对像
+            var gm = new Game(document.querySelector(".map"));
+            //初始化游戏----游戏开始
+            gm.init();
+        </script>
+    </body>
+
+</html>
